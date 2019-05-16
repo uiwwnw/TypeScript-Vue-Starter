@@ -1,7 +1,7 @@
 <!-- src/components/Hello.vue -->
 <template>
     <div>
-        <div class="greeting">Hello {{name}}{{exclamationMarks}}</div>
+        <div class="greeting1">Hello <span>{{name}}</span>{{exclamationMarks}}</div>
         <button @click="decrement">-</button>
         <button @click="increment">+</button>
     </div>
@@ -33,8 +33,12 @@ export default Vue.extend({
 });
 </script>
 
-<style>
-.greeting {
+<style lang="scss">
+.greeting1 {
     font-size: 20px;
+
+    span {
+        color: red;
+    }
 }
 </style>

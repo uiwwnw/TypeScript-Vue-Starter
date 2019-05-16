@@ -2,7 +2,7 @@
 <!-- This is an alternative way to define the Hello component using decorators -->
 <template>
     <div>
-        <div class="greeting">Hello {{name}}{{exclamationMarks}}</div>
+        <div class="greeting2">Hello <span>{{name}}</span>{{exclamationMarks}}</div>
         <button @click="decrement">-</button>
         <button @click="increment">+</button>
     </div>
@@ -33,8 +33,14 @@ export default class HelloDecorator extends Vue {
 }
 </script>
 
-<style>
-.greeting {
-    font-size: 20px;
-}
+
+<style lang="scss">
+    .greeting2 {
+        font-size: 30px;
+
+        span {
+            color: blue;
+        }
+    }
 </style>
+
